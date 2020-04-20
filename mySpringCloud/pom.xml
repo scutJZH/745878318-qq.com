@@ -8,8 +8,10 @@
   <artifactId>mySpringCloud</artifactId>
   <version>1.0-SNAPSHOT</version>
   <modules>
-    <module>consumerClient</module>
-    <module>providedService</module>
+    <module>borrow-books-client81</module>
+    <module>repository-management-server8080</module>
+    <module>repository-management-client80</module>
+    <module>common-api</module>
   </modules>
   <packaging>pom</packaging>
 
@@ -55,11 +57,11 @@
         <artifactId>mysql-connector-java</artifactId>
         <version>${mysql.version}</version>
       </dependency>
-<!--      <dependency>-->
-<!--        <groupId>com.alibaba</groupId>-->
-<!--        <artifactId>druid</artifactId>-->
-<!--        <version>${druid.version}</version>-->
-<!--      </dependency>-->
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>druid-spring-boot-starter</artifactId>
+        <version>${druid.version}</version>
+      </dependency>
       <dependency>
         <groupId>org.mybatis.spring.boot</groupId>
         <artifactId>mybatis-spring-boot-starter</artifactId>
@@ -85,6 +87,26 @@
         <groupId>com.baomidou</groupId>
         <artifactId>mybatis-plus-boot-starter</artifactId>
         <version>3.3.1</version>
+      </dependency>
+      <dependency>
+        <groupId>javax.validation</groupId>
+        <artifactId>validation-api</artifactId>
+        <version>2.0.1.Final</version>
+      </dependency>
+      <dependency>
+        <groupId>org.hibernate.validator</groupId>
+        <artifactId>hibernate-validator</artifactId>
+        <version>7.0.0.Alpha1</version>
+      </dependency>
+      <dependency>
+        <groupId>com.jzh.spring_cloud</groupId>
+        <artifactId>common-api</artifactId>
+        <version>1.0-SNAPSHOT</version>
+      </dependency>
+      <dependency>
+        <groupId>com.alibaba</groupId>
+        <artifactId>fastjson</artifactId>
+        <version>1.2.68</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
