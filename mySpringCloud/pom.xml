@@ -15,6 +15,8 @@
     <module>eureka-server-8001</module>
     <module>eureka-client-8080</module>
     <module>eureka-server-8000</module>
+    <module>eureka-client-8081</module>
+    <module>eureka-consumer-80</module>
   </modules>
   <packaging>pom</packaging>
 
